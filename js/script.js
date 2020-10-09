@@ -93,3 +93,7 @@ $(function() {
    });
 });
 
+// АНИМАЦИЯ ПРИ СКРОЛЛЕ ДЛЯ HEADER
+$(document).scroll(function(e) {
+    $(window).scrollTop() > 500 ? $('.header').addClass('header__color') : $('.header').removeClass('header__color');
+});
