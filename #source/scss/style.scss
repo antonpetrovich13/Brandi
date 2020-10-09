@@ -67,6 +67,8 @@ body.lock{
 		align-items: center;
 	}
 	&__logo {
+		position: relative;
+		z-index: 2;
 		flex: 0 1 90px;
 		& img{
 			max-width: 100%;
@@ -84,13 +86,19 @@ body.lock{
 			color: #32b0ee;
 		}
 	}
-	&__burger {}
-	&__menu {
+	&__burger {
+		display: none;
 	}
 	&__list {
 		display: flex;
 		& li{
 			margin: 0 15px;
+			&:first-child{
+				margin: 0 15px 0 0 ;
+			}
+			&:last-child{
+				margin: 0 0 0 15px;
+			}
 		}
 	}
 	&__link {
@@ -115,10 +123,107 @@ body.lock{
 			transform: scale(1);
 		}
 	}
+	@media (max-width: 768px) {
+		&__wrapper{
+			height: 50px;
+		}
+		&__logo{
+			flex: 0 1 70px;
+		}
+		&__text{
+			display: none;
+		}
+		&__list{
+			& li{
+				margin: 0 10px;
+				&:first-child{
+					margin: 0 10px 0 0 ;
+				}
+				&:last-child{
+					margin: 0 0 0 10px;
+				}
+			}
+		}
+	}
+	@media (max-width: 550px) {
+		&__burger{
+			display: block;
+			z-index: 2;
+			position: relative;
+			top: 0;
+			left: 0;
+			width: 30px;
+			height: 20px;
+			&:before{
+				transition: all 0.3s ease 0s;
+				content: '';
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 100%;
+				height: 1.5px;
+				background-color: #fff;
+			}
+			& span{
+				transition: all 0.3s ease 0s;
+				content: '';
+				position: absolute;
+				top: 8px;
+				left: 0;
+				width: 100%;
+				height: 1.5px;
+				background-color: #fff;
+			}
+			&:after{
+				transition: all 0.3s ease 0s;
+				content: '';
+				position: absolute;
+				top: 16px;
+				left: 0;
+				width: 100%;
+				height: 1.5px;
+				background-color: #fff;
+			}
+		}
+		&__burger.active:before{
+			top: 8px;
+			transform:rotate(45deg);
+		}
+		&__burger.active span{
+			transform:scale(0);
+		}
+		&__burger.active:after{
+			top: 8px;
+			transform:rotate(-45deg);
+		}
+		&__menu{
+		transition: all 0.5s ease 0s;
+		z-index: 1;
+		position: fixed;
+		top: 0;
+		left: -100%;
+		width: 100%;
+		height: 100%;
+		background-color:rgba(29, 97, 91, 0.5);
+		overflow: auto;
+	}
+	&__menu.active{
+		left: 0;
+	}
+	&__list{
+		margin: 80px 0 0 0;
+		flex-direction:column;
+		align-items: center;
+		& li{
+			margin: 0 !important;
+			padding: 0 0 28px 0;
+		}
+	}
+		&__link{
+			font-size: 26px;
+		}
+	}
 }
-.container {
-}
-
 
 //  <MAINSCREEN> ===========================================================================================
 
