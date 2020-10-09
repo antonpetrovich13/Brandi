@@ -61,21 +61,20 @@ if (animItems.length > 0) {
 
 // МЕНЮ-БУРГЕР
 $(document).ready(function() {
-	$('.menu__item').click(function(event)
+	$('.header__burger').click(function(event)
 	 {
-		$('.menu__item,.menu__body,.header__link').
+		$('.header__burger,.header__menu').
 			toggleClass('active');
 		$('body').toggleClass('lock');
 	});
 });
 
 $(document).ready(function() {
-    $('.menu__link, .header__link').click(function(event) {
-        $('.menu__item, .menu__body, .header__link').removeClass('active');
+    $('.header__link').click(function(event) {
+        $('.header__burger, .header__menu').removeClass('active');
         $('body').removeClass('lock')
     });
 });
-
 
 
 // ПЛАВНАЯ НАВИГАЦИЯ
