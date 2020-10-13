@@ -480,11 +480,19 @@ body.lock {
 }
 
 .main-info__link {
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
   margin: 0 8px;
+  opacity: 0.5;
 }
 
 .main-info__link_g {
   padding: 0 0 0 2px;
+}
+
+.main-info__link:hover {
+  opacity: 1;
 }
 
 @media (max-width: 768px) {

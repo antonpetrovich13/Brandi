@@ -313,9 +313,14 @@ body.lock{
 		margin: 100% 0 0 0;
 	}
 	&__link {
+		transition: all 0.3s ease 0s;
 		margin: 0 8px;
+		opacity: 0.5;
 		&_g{
 			padding: 0 0 0 2px;
+		}
+		&:hover{
+			opacity: 1;
 		}
 	}
 	@media (max-width: 768px) {
