@@ -430,7 +430,7 @@ body.lock {
 }
 
 .main-info__label {
-  margin: 10px 0 0 0;
+  margin: 10px 0 22px 0;
   opacity: 0.9;
   font-size: 48px;
   font-weight: 300;
@@ -444,7 +444,6 @@ body.lock {
 .main-info__subtitle {
   position: relative;
   display: inline-block;
-  margin: 22px 0 0 0;
   opacity: 0.9;
   font-size: 18px;
   font-weight: 300;
@@ -481,4 +480,60 @@ body.lock {
 
 .main-info__link_g {
   padding: 0 0 0 2px;
+}
+
+@media (max-width: 768px) {
+  .main-info__wrapper {
+    padding: 30% 0 0 0;
+  }
+  .main-info__title {
+    font-size: 52px;
+  }
+  .main-info__label {
+    font-size: 38px;
+  }
+}
+
+@media (max-width: 550px) {
+  .main-info__wrapper {
+    padding: 45% 0 0 0;
+  }
+  .main-info__title {
+    font-size: 42px;
+  }
+  .main-info__label {
+    font-size: 28px;
+  }
+  .main-info__subtitle {
+    font-size: 16px;
+  }
+  .main-info__subtitle:before {
+    width: 20px;
+    left: -35px;
+  }
+  .main-info__subtitle:after {
+    width: 20px;
+    right: -35px;
+  }
+}
+
+@media (max-width: 420px) {
+  .main-info__title {
+    font-size: 36px;
+  }
+  .main-info__label {
+    margin: 10px 0 26px 0;
+    font-size: 22px;
+  }
+  .main-info__subtitle {
+    font-size: 14px;
+  }
+  .main-info__subtitle:before {
+    width: 15px;
+    left: -25px;
+  }
+  .main-info__subtitle:after {
+    width: 15px;
+    right: -25px;
+  }
 }
