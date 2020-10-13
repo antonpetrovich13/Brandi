@@ -409,7 +409,7 @@ body.lock {
 
 .main-info__wrapper {
   height: 100vh;
-  padding: 25% 0 5% 0;
+  padding: 25% 0 50px 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -497,7 +497,7 @@ body.lock {
 
 @media (max-width: 768px) {
   .main-info__wrapper {
-    padding: 35% 0 5% 0;
+    padding: 35% 0 50px 0;
   }
   .main-info__title {
     font-size: 52px;
@@ -509,7 +509,7 @@ body.lock {
 
 @media (max-width: 550px) {
   .main-info__wrapper {
-    padding: 50% 0 5% 0;
+    padding: 50% 0 50px 0;
   }
   .main-info__title {
     font-size: 42px;
