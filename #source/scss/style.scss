@@ -53,7 +53,7 @@ body.lock{
 .header {
 	position: fixed;
 	width: 100%;
-	z-index: 2;
+	z-index: 3;
 	transition: all 0.5s ease 0s;
 	&__wrapper {
 		display: flex;
@@ -237,3 +237,84 @@ body.lock{
 	width: 100%;
 	height: 100%;
 }
+
+//  <MAIN-INFO> ===========================================================================================
+
+.main-info {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100vh;
+	z-index: 2;
+	&__wrap {
+		height: 100vh;
+		display: flex;
+		flex-direction:column;
+	}
+	&__wrapper {
+		height: 100vh;
+		padding: 20% 0 0 0;
+		display: flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content: space-around;
+	}
+	&__floor {
+	}
+	&__text {
+		text-align: center;
+	}
+	&__title {
+		font-size: 62px;
+		font-weight: 300;
+		color: #ffffff;
+	}
+	&__label {
+		margin: 10px 0 0 0;
+		opacity: 0.9;
+		font-size: 48px;
+		font-weight: 300;
+		color: #fff;
+		& span{
+			color: #0feb9e;
+		}
+	}
+	&__subtitle {
+		position: relative;
+		display: inline-block;
+		margin: 22px 0 0 0;
+		opacity: 0.9;
+		font-size: 18px;
+		font-weight: 300;
+		color: #ffffff;
+		&:before{
+			content:'';
+			position: absolute;
+			top: 50%;
+			left:-55px;
+			width: 28px;
+			height: 1px;
+			background-color: #0feb9e;
+		}
+		&:after{
+			content:'';
+			position: absolute;
+			top: 50%;
+			right:-55px;
+			width: 28px;
+			height: 1px;
+			background-color: #0feb9e;
+		}
+	}
+	&__links {
+		margin: 80% 0 0 0;
+	}
+	&__link {
+		margin: 0 8px;
+		&_g{
+			padding: 0 0 0 2px;
+		}
+	}
+}
+
