@@ -97,3 +97,9 @@ $(function() {
 $(document).scroll(function(e) {
     $(window).scrollTop() > 500 ? $('.header').addClass('header__color') : $('.header').removeClass('header__color');
 });
+
+// ПАРАЛАКС
+$(window).scroll(function(event){
+		var s=0-$(this).scrollTop()/2;
+	$('.mainscreen').css('transform', 'translate3d(0, '+s+'px, 0)');
+});
