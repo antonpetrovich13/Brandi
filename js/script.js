@@ -11,13 +11,28 @@ ibg();
 
 // СЛАЙДЕР
 $(document).ready(function(){
-	$('.slider').slick({
+	$('.features__slider').slick({
 		arrows: false,
+		speed:800,
 		dots:true,
-		autoplay:true,
-		speed:1000,
-		autoplaySpeed:4000,
-		pauseOnHover:true,
+		slidesToShow:3,
+		slidesToScroll: 3,
+		adaptiveHeight:true,
+		responsive:[
+		{
+			breakpoint:1140,
+				settings:{
+					slidesToShow:2,
+					slidesToScroll: 2,
+				}
+			},{
+				breakpoint:770,
+					settings:{
+						slidesToShow:1,
+						slidesToScroll: 1,
+					}
+			}
+		]
 	});
 });
 
