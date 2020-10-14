@@ -132,6 +132,14 @@ body.lock {
   height: 100%;
 }
 
+.content {
+  position: relative;
+  top: 0;
+  left: 0;
+  width: 100%;
+  background-color: #fff;
+}
+
 .container {
   max-width: 1198px;
   margin: 0 auto;
@@ -380,7 +388,7 @@ body.lock {
 }
 
 .mainscreen {
-  position: absolute;
+  position: fixed;
   top: 0;
   left: 0;
   width: 100%;
