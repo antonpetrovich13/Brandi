@@ -36,6 +36,20 @@ $(document).ready(function(){
 	});
 });
 
+// ФИЛЬТР
+$('.filter__link').click(function(event) {
+	var i=$(this).data('filter');
+	if (i==1) {
+		$('.works__column').show();
+	}else{
+		$('.works__column').hide();
+		$('.works__column.f_'+i).show();
+	}
+	$('.filter__link').removeClass('active');
+	$(this).addClass('active');
+	return false;
+});
+
 // АНИМАЦИЯ ПРИ СКРОЛЛЕ
 const animItems = document.querySelectorAll('._anim-items');
 
