@@ -59,7 +59,7 @@ body.lock{
 .header {
 	position: fixed;
 	width: 100%;
-	z-index: 8;
+	z-index: 15;
 	transition: all 0.5s ease 0s;
 	&__wrapper {
 		display: flex;
@@ -545,7 +545,7 @@ body.lock{
 //  <WORKS> ===========================================================================================
 
 .works {
-	padding: 99px 0 0;
+	padding: 77px 0 0 0;
 	background-color: #fff;
 	&__title {}
 	&__subtitle{
@@ -577,16 +577,28 @@ body.lock{
 			max-width: 100%;
 		}
 	}
-	&__bg {
-		
+	&__bg{}
+	@media (max-width: 1000px) {
+		&__column{
+			flex: 0 1 33.333%;
+		}
 	}
 	@media (max-width: 770px) {
 		padding: 50px 0 0 0;
+		&__column{
+			flex: 0 1 50%;
+		}
 		&__subtitle{
 			margin: 22px auto 35px auto;
 		}
 		&__items{
 			margin: 20px 0 0 0;
+		}
+	}
+	@media (max-width: 500px) {
+		&__subtitle{
+			font-size: 14px;
+			margin: 32px auto 32px auto;
 		}
 	}
 }
@@ -595,6 +607,7 @@ body.lock{
 		display: flex;
 		justify-content: center;
 		align-items: center;
+		flex-wrap:wrap;
 		& li{
 			margin: 0 25px;
 			&:first-child{
@@ -635,6 +648,41 @@ body.lock{
 		}
 		&:hover:before{
 			transform:scale(1);
+		}
+	}
+	@media (max-width: 500px) {
+		&__list{
+			& li{
+				margin: 0 15px;
+				&:first-child{
+					margin: 0 15px 0 0;
+				}
+				&:last-child{
+					margin: 0 0 0 15px;
+				}
+			}
+		}
+		
+	}
+	@media (max-width: 450px) {
+		&__list{
+			text-align: center;
+			& li{
+				display: block;
+				&:nth-child(1),&:nth-child(2),&:nth-child(3){
+					margin: 0;
+				}
+				flex: 0 1 33.333%;
+				&:nth-child(4),&:nth-child(5){
+					margin: 15px 0 0 0;
+				}
+			}
+		}
+		&__link{
+			&:before{
+				width: 100%;
+				left: 0;
+			}
 		}
 	}
 }
