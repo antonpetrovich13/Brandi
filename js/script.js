@@ -36,6 +36,7 @@ $(document).ready(function(){
 	});
 });
 
+
 // ФИЛЬТР
 $('.filter__link').click(function(event) {
 	var i=$(this).data('filter');
@@ -110,7 +111,8 @@ $(document).ready(function() {
 $(function(){
         $("a[href^='#']").click(function(){
                 var _href = $(this).attr("href");
-                $("html, body").animate({scrollTop: $(_href).offset().top+"px"},500);
+                var fixed_offset = 50;
+                $("html, body").animate({scrollTop: $(_href).offset().top- fixed_offset },500);
                 return false;
         });
 });
