@@ -827,6 +827,9 @@ body.lock {
   .works__items {
     margin: 20px 0 0 0;
   }
+  .works .bg {
+    display: none;
+  }
 }
 
 @media (max-width: 500px) {
