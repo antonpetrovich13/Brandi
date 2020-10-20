@@ -604,6 +604,11 @@ body.lock{
 			margin: 32px auto 32px auto;
 		}
 	}
+	@media (max-width: 400px) {
+		&__column{
+			flex: 0 1 100%;
+		}
+	}
 }
 .filter {
 	&__list {

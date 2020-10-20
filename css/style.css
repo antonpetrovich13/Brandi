@@ -839,6 +839,14 @@ body.lock {
   }
 }
 
+@media (max-width: 400px) {
+  .works__column {
+    -webkit-box-flex: 0;
+    -ms-flex: 0 1 100%;
+    flex: 0 1 100%;
+  }
+}
+
 .filter__list {
   display: -webkit-box;
   display: -ms-flexbox;
