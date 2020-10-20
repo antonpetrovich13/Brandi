@@ -760,7 +760,6 @@ body.lock{
 }
 .item {
 	position: relative;
-	z-index: 3;
 	display:inline-block;
 	&__image {
 	}
@@ -790,6 +789,12 @@ body.lock{
 	&__subtitle {
 		color: #ffffff;
 		line-height: 22px;
+	}
+	&__links{
+		position: absolute;
+		bottom: 23px;
+		left: 0;
+		width: 100%;
 	}
 }
 

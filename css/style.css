@@ -1033,7 +1033,6 @@ body.lock {
 
 .item {
   position: relative;
-  z-index: 3;
   display: inline-block;
 }
 
@@ -1068,4 +1067,11 @@ body.lock {
 .item__subtitle {
   color: #ffffff;
   line-height: 22px;
+}
+
+.item__links {
+  position: absolute;
+  bottom: 23px;
+  left: 0;
+  width: 100%;
 }
