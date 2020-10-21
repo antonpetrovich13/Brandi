@@ -505,11 +505,15 @@ body.lock{
 			height: 1px;
 			background-color: #062033;
 		}
+		&_w{
+			opacity: 1;
+			&:before,&:after{
+				opacity: 0.5;
+				background-color: #fff;
+			}
+		}
 	}
 	@media (max-width: 770px) {
-		&__label{
-			font-size: 24px;
-		}
 		&__icon{
 			&:before{
 				width: 55px;
@@ -848,6 +852,100 @@ body.lock{
 		}
 	}
 }
+
+//  <FACTS> ===========================================================================================
+
+.facts {
+	padding: 100px 0;
+	background: url(../img/facts/background.jpg) no-repeat;
+	background-size: cover;
+	background-position: center;
+	&__title {}
+	&__wrap {
+		padding: 20px 0 0 0;
+		margin: 0 -40px;
+		display: flex;
+		align-items:center;
+		justify-content:center;
+		flex-wrap:wrap;
+	}
+	&__column {
+		padding: 0 40px;
+		margin: 60px 0 0 0;
+		flex: 0 1 25%;
+	}
+	&__item {
+		display: flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content:center;
+	}
+	&__image {
+		display: flex;
+		align-items:center;
+		justify-content:center;
+		width: 130px;
+		height: 130px;
+		border-radius: 50%;
+		border: 2px solid #fff;
+	}
+	&__body {
+		margin: 40px 0 0 0;
+		text-align: center;
+	}
+	&__label{
+		font-size: 60px;
+		font-weight: 600;
+		color: #ffffff;
+	}
+	&__subtitle {
+		margin: 10px 0 0 0;
+		font-size: 18px;
+		font-weight: 300;
+		text-transform: uppercase;
+		color: #ffffff;
+		white-space: nowrap;
+	}
+	@media (max-width: 1030px) {
+		&__wrap{
+			margin: 0 -20px;
+		}
+		&__column{
+			padding: 0 20px;
+		}
+		&__image{
+			width: 100px;
+			height: 100px;
+		}
+		&__label{
+			font-size: 50px;
+		}
+	}
+	@media (max-width: 910px) {
+		&__column{
+			flex: 0 1 50%;
+		}
+		&__wrap{
+			padding: 0;
+		}
+		&__body{
+			margin: 25px 0 0 0;
+		}
+		&__label{
+			font-size: 35px;
+		}
+	}
+	@media (max-width: 770px) {
+		padding: 50px 0;
+	}
+}
+.container-2{
+	max-width: 1069px;
+	margin: 0 auto;
+	padding: 0 15px;
+	overflow: hidden;
+}
+
 
 
 
