@@ -731,7 +731,7 @@ body.lock{
 	}
 }
 
-//  <WORKS> ===========================================================================================
+//  <TEAM> ===========================================================================================
 
 .team {
 	background-color: #f4f7f9;
@@ -785,24 +785,30 @@ body.lock{
 	}
 }
 .item {
+	overflow: hidden;
 	position: relative;
 	display:inline-block;
 	&__photo {
 	}
 	&__body {
-		transition: all 0.4s ease 0s;
+		transition: all 0.5s ease 0s;
 		padding: 0 30px;
 		text-align: center;
 		position: absolute;
 		background-color: #0eb493;
-		opacity: 0;
+		opacity: 0.9;
 		top: 0;
 		left: 0;
 		width: 100%;
 		height: 100%;
+		transform:translate(0,90%);
 		&:hover{
-			opacity: 0.9;
+			transform:translate(0,0);
 		}
+	}
+	&__arrow{
+		margin: 8px 0 0 0;
+		transform:rotate(180deg);
 	}
 	&__title {
 		margin: 25px 0;
@@ -817,7 +823,7 @@ body.lock{
 		line-height: 22px;
 	}
 	&__socials{
-		margin: 67px 0 0 0;
+		margin: 50px 0 0 0;
 		display: flex;
 		justify-content:center;
 	}
