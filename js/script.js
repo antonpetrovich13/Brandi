@@ -41,14 +41,47 @@ $(document).ready(function(){
 $('.filter__link').click(function(event) {
 	var i=$(this).data('filter');
 	if (i==1) {
-		$('.works__column').show();
+		$('.works__column').show(0);
 	}else{
-		$('.works__column').hide();
-		$('.works__column.f_'+i).show();
+		$('.works__column').hide(0);
+		$('.works__column.f_'+i).show(0);
 	}
 	$('.filter__link').removeClass('active');
 	$(this).addClass('active');
 	return false;
+});
+
+// СЛАЙДЕР
+$(document).ready(function(){
+	$('.team__slider').slick({
+		arrows: false,
+		speed:800,
+		dots:true,
+		slidesToShow:4,
+		slidesToScroll: 4,
+		adaptiveHeight:true,
+		responsive:[
+		{
+			breakpoint:1160,
+				settings:{
+					slidesToShow:3,
+					slidesToScroll: 3,
+				}
+			},{
+			breakpoint:890,
+				settings:{
+					slidesToShow:2,
+					slidesToScroll: 2,
+				}
+			},{
+			breakpoint:600,
+				settings:{
+					slidesToShow:1,
+					slidesToScroll: 1,
+				}
+			}
+		]
+	});
 });
 
 // АНИМАЦИЯ ПРИ СКРОЛЛЕ
