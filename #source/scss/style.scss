@@ -733,7 +733,9 @@ body.lock{
 	background-color: #f4f7f9;
 	padding: 77px 0;
 	&__title {}
-	&__slider {}
+	&__slider {
+		padding: 50px 0 0 0;
+	}
 	&__slide {
 		position: relative;
 		text-align: center;
@@ -757,11 +759,31 @@ body.lock{
 		font-size: 13px;
 		color: #062033;
 	}
+	& .slick-dots{
+		margin: 37px 0 0 0;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+	& .slick-dots li{
+		margin: 0 7.5px;
+	}
+	& .slick-dots li.slick-active button{
+		background-color:#062033;
+	}
+	& .slick-dots li button{
+		font-size: 0;
+		width: 8px;
+		height: 8px;
+		border-radius: 50%;
+		background-color: #f7f7f7;
+		border: 1px solid #062033;
+	}
 }
 .item {
 	position: relative;
 	display:inline-block;
-	&__image {
+	&__photo {
 	}
 	&__body {
 		transition: all 0.4s ease 0s;
@@ -790,11 +812,40 @@ body.lock{
 		color: #ffffff;
 		line-height: 22px;
 	}
-	&__links{
-		position: absolute;
-		bottom: 23px;
-		left: 0;
-		width: 100%;
+	&__socials{
+		margin: 67px 0 0 0;
+		display: flex;
+		justify-content:center;
+	}
+	&__link{
+		margin: 0 2px;
+		display: flex;
+		flex-direction:column;
+		align-items:center;
+		justify-content: center;
+		width: 42px;
+		height: 42px;
+		background-color: rgba(0, 0, 0, 0.3);
+	}
+}
+
+@media (max-width: 770px) {
+	.team{
+		padding: 50px 0 ;
+		&__slider {
+		padding: 20px 0 0 0;
+	}
+	}
+}
+@media (max-width: 480px) {
+	.team{
+		padding: 59px 0 30px 0;
+		&__slider {
+		padding: 0 0 0 0;
+		}
+		& .slick-dots{
+			margin: 27px 0 0 0;
+		}
 	}
 }
 
