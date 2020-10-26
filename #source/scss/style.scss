@@ -952,6 +952,133 @@ body.lock{
 	overflow: hidden;
 }
 
+//  <DISCUSS> ===========================================================================================
+
+.discuss {
+	padding: 100px 0;
+	&__title {}
+	&__wrapper {
+		display: flex;
+		padding: 0 -28.5px;
+	}
+	&__column {
+		margin: 0 28.5px;
+		&_1{
+			flex: 0 1 21.3%;
+		}
+		&_2{
+			flex: 0 1 78.7%;
+		}
+	}
+	&__contacts {}
+	&__body {}
+	&__wrap {
+		display: flex;
+		margin: 0 -23px;
+	}
+	&__form {
+		padding: 0 23px;
+		flex: 0 1 91.519%;
+	}
+	&__links {
+		padding: 0 23px;
+		flex: 0 1 8.481%;
+	}
+	&__link {
+		margin: 15px 0;
+		text-align: center;
+		display: block;
+		opacity: 0.3;
+		color: #062033;
+		transition:all 0.3s ease 0s;
+		&:hover{
+			opacity: 1;
+		}
+	}
+}
+.contacts {
+	&__title {
+		font-size: 22px;
+		line-height: 32px;
+		color: #062033;
+	}
+	&__body{
+		margin: 40px 0 0 0;
+		font-size: 13px;
+		line-height: 24px;
+		color: #6a737b;
+	}
+	&__adress {}
+	&__phone {
+		color: #6a737b;
+	}
+	&__mail {
+		display: block;
+		color: #6a737b;
+	}
+	&__site {
+		color: #6a737b;
+	}
+}
+.form {
+	&__body {
+		width: 100%;
+	}
+	&__title {
+		font-size: 24px;
+		font-weight: 700;
+		color: #062033;
+	}
+	&__wrap{
+		display: flex;
+
+	}
+	&__name {
+		margin: 0 15.5px 0 0;
+		flex: 0 1 47.5%;
+		height: 50px;
+		box-shadow: 0 1px 0 #5b646e;
+		opacity: 0.5;
+		font-size: 13px;
+		line-height: 24px;
+		color: #5b646e;
+	}
+	&__mail {
+		margin: 0 0 0 15.5px;
+		flex: 0 1 47.5%;
+		height: 50px;
+		box-shadow: 0 1px 0 #5b646e;
+		opacity: 0.5;
+		font-size: 13px;
+		line-height: 24px;
+		color: #5b646e;
+	}
+	&__message {
+		margin: 47px 0 0 0 ;
+		display: block;
+		width: 100%;
+		height: 35px;
+		box-shadow: 0 1px 0 #5b646e;
+		opacity: 0.5;
+		font-size: 13px;
+		line-height: 24px;
+		color: #5b646e;
+	}
+	&__btn{
+		text-align: right;
+	}
+	&__button {
+		margin: 38px 0 0 0;
+		background: url(../img/discuss/01.png) no-repeat left;
+		padding: 0 0 0 35px;
+		font-size: 16px;
+		font-weight: 550;
+		color: #000000;
+		background-color: none;
+	}
+}
+
+
 
 
 

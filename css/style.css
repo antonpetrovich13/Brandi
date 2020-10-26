@@ -1301,3 +1301,163 @@ body.lock {
   padding: 0 15px;
   overflow: hidden;
 }
+
+.discuss {
+  padding: 100px 0;
+}
+
+.discuss__wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  padding: 0 -28.5px;
+}
+
+.discuss__column {
+  margin: 0 28.5px;
+}
+
+.discuss__column_1 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 21.3%;
+  flex: 0 1 21.3%;
+}
+
+.discuss__column_2 {
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 78.7%;
+  flex: 0 1 78.7%;
+}
+
+.discuss__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 -23px;
+}
+
+.discuss__form {
+  padding: 0 23px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 91.519%;
+  flex: 0 1 91.519%;
+}
+
+.discuss__links {
+  padding: 0 23px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 8.481%;
+  flex: 0 1 8.481%;
+}
+
+.discuss__link {
+  margin: 15px 0;
+  text-align: center;
+  display: block;
+  opacity: 0.3;
+  color: #062033;
+  -webkit-transition: all 0.3s ease 0s;
+  -o-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+}
+
+.discuss__link:hover {
+  opacity: 1;
+}
+
+.contacts__title {
+  font-size: 22px;
+  line-height: 32px;
+  color: #062033;
+}
+
+.contacts__body {
+  margin: 40px 0 0 0;
+  font-size: 13px;
+  line-height: 24px;
+  color: #6a737b;
+}
+
+.contacts__phone {
+  color: #6a737b;
+}
+
+.contacts__mail {
+  display: block;
+  color: #6a737b;
+}
+
+.contacts__site {
+  color: #6a737b;
+}
+
+.form__body {
+  width: 100%;
+}
+
+.form__title {
+  font-size: 24px;
+  font-weight: 700;
+  color: #062033;
+}
+
+.form__wrap {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.form__name {
+  margin: 0 15.5px 0 0;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 47.5%;
+  flex: 0 1 47.5%;
+  height: 50px;
+  -webkit-box-shadow: 0 1px 0 #5b646e;
+  box-shadow: 0 1px 0 #5b646e;
+  opacity: 0.5;
+  font-size: 13px;
+  line-height: 24px;
+  color: #5b646e;
+}
+
+.form__mail {
+  margin: 0 0 0 15.5px;
+  -webkit-box-flex: 0;
+  -ms-flex: 0 1 47.5%;
+  flex: 0 1 47.5%;
+  height: 50px;
+  -webkit-box-shadow: 0 1px 0 #5b646e;
+  box-shadow: 0 1px 0 #5b646e;
+  opacity: 0.5;
+  font-size: 13px;
+  line-height: 24px;
+  color: #5b646e;
+}
+
+.form__message {
+  margin: 47px 0 0 0;
+  display: block;
+  width: 100%;
+  height: 35px;
+  -webkit-box-shadow: 0 1px 0 #5b646e;
+  box-shadow: 0 1px 0 #5b646e;
+  opacity: 0.5;
+  font-size: 13px;
+  line-height: 24px;
+  color: #5b646e;
+}
+
+.form__btn {
+  text-align: right;
+}
+
+.form__button {
+  margin: 38px 0 0 0;
+  background: url(../img/discuss/01.png) no-repeat left;
+  padding: 0 0 0 35px;
+  font-size: 16px;
+  font-weight: 550;
+  color: #000000;
+  background-color: none;
+}
