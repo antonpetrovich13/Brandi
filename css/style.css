@@ -1336,8 +1336,8 @@ body.lock {
 }
 
 .discuss {
-  padding: 100px 0;
   position: relative;
+  padding: 100px 0;
 }
 
 .discuss__wrapper {
@@ -1620,4 +1620,10 @@ body.lock {
   .discuss {
     padding: 50px 0 110px 0;
   }
+}
+
+.map__maps {
+  position: absolute;
+  height: 250px;
+  width: 100%;
 }
