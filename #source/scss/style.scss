@@ -512,6 +512,20 @@ body.lock{
 				background-color: #fff;
 			}
 		}
+		& img{
+			animation-name: heart;
+		animation-duration:0.5s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
+		}
+	}
+	@keyframes heart {
+		0%{
+			transform:scale(1);
+		}
+		100%{
+			transform:scale(1.2);
+		}
 	}
 	@media (max-width: 770px) {
 		&__icon{
@@ -1010,14 +1024,29 @@ body.lock{
 	}
 	&__adress {}
 	&__phone {
+		display: inline-block;
+		transition: all 0.3s ease 0s;
 		color: #6a737b;
+		&:hover{
+			font-weight: 500px;
+			color: #0eb493;
+		}
 	}
 	&__mail {
-		display: block;
+		display:block;
+		transition: all 0.3s ease 0s;
 		color: #6a737b;
+		&:hover{
+			color: #0eb493;
+		}
 	}
 	&__site {
+		display: block;
 		color: #6a737b;
+		transition: all 0.3s ease 0s;
+		&:hover{
+			color: #0eb493;
+		}
 	}
 }
 .form {
@@ -1030,8 +1059,8 @@ body.lock{
 		color: #062033;
 	}
 	&__wrap{
+		margin: 30px 0 0 0;
 		display: flex;
-
 	}
 	&__name {
 		margin: 0 15.5px 0 0;
