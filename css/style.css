@@ -1337,9 +1337,11 @@ body.lock {
 
 .discuss {
   padding: 100px 0;
+  position: relative;
 }
 
 .discuss__wrapper {
+  padding: 21px 0 0 0;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -1507,15 +1509,115 @@ body.lock {
 }
 
 .form__btn {
+  margin: 38px 0 0 0;
   text-align: right;
 }
 
 .form__button {
-  margin: 38px 0 0 0;
   background: url(../img/discuss/01.png) no-repeat left;
   padding: 0 0 0 35px;
   font-size: 16px;
   font-weight: 550;
   color: #000000;
   background-color: none;
+}
+
+@media (max-width: 1020px) {
+  .discuss {
+    padding: 70px 0;
+  }
+  .discuss__wrapper {
+    padding: 21px 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .discuss__column_1 {
+    margin: 41px 0 0 0;
+    -webkit-box-ordinal-group: 3;
+    -ms-flex-order: 2;
+    order: 2;
+    text-align: center;
+  }
+  .contacts__body {
+    margin: 10px 0 0 0;
+  }
+}
+
+@media (max-width: 770px) {
+  .discuss {
+    padding: 50px 0;
+  }
+}
+
+@media (max-width: 500px) {
+  .discuss {
+    padding: 50px 0 75px 0;
+  }
+  .discuss__wrapper {
+    padding: 0;
+  }
+  .discuss__wrap {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .discuss__column_1 {
+    margin: 34px 0 0 0;
+  }
+  .discuss__links {
+    position: absolute;
+    bottom: 12px;
+    left: 0;
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
+    align-items: center;
+  }
+  .discuss__link {
+    margin: 7px 20px;
+  }
+  .form__title {
+    font-size: 22px;
+  }
+  .form__wrap {
+    margin: 20px 0 0 0;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
+    flex-direction: column;
+  }
+  .form__name {
+    margin: 0 0 10px 0;
+    width: 50%;
+    padding: 0 0 10px 0;
+  }
+  .form__mail {
+    margin: 10px 0 0 0;
+    width: 50%;
+    padding: 0 0 10px 0;
+  }
+  .form__message {
+    margin: 20px 0 0 0;
+  }
+  .form__btn {
+    margin: 20px 0 0 0;
+    text-align-last: left;
+  }
+}
+
+@media (max-width: 373px) {
+  .discuss {
+    padding: 50px 0 110px 0;
+  }
 }

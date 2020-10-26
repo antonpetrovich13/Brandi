@@ -970,8 +970,10 @@ body.lock{
 
 .discuss {
 	padding: 100px 0;
+	position: relative;
 	&__title {}
 	&__wrapper {
+		padding: 21px 0 0 0;
 		display: flex;
 		padding: 0 -28.5px;
 	}
@@ -1094,16 +1096,103 @@ body.lock{
 		color: #5b646e;
 	}
 	&__btn{
+		margin: 38px 0 0 0;
 		text-align: right;
 	}
 	&__button {
-		margin: 38px 0 0 0;
 		background: url(../img/discuss/01.png) no-repeat left;
 		padding: 0 0 0 35px;
 		font-size: 16px;
 		font-weight: 550;
 		color: #000000;
 		background-color: none;
+	}
+}
+
+@media (max-width: 1020px) {
+	.discuss{
+		padding: 70px 0;
+		&__wrapper{
+			padding: 21px 0 0 0;
+			flex-direction:column;
+		}
+		&__column{
+			&_1{
+				margin: 41px 0 0 0;
+				order:2;
+				text-align: center;
+			}
+		}
+	}
+	.contacts{
+		&__body{
+			margin: 10px 0 0 0;
+		}
+	}
+}
+@media (max-width: 770px) {
+	.discuss{
+		padding: 50px 0;
+	}
+}
+@media (max-width: 500px) {
+	.discuss{
+		padding: 50px 0 75px 0;
+		&__wrapper{
+			padding:0;
+		}
+		&__wrap{
+			flex-direction:column;
+		}
+		&__column{
+			&_1{
+				margin: 34px 0 0 0;
+			}
+		}
+		&__links{
+			position: absolute;
+			bottom:12px;
+			left: 0;
+			width: 100%;
+			display: flex;
+			justify-content:center;
+			flex-wrap:wrap;
+			align-items:center;
+		}
+		&__link{
+			margin: 7px 20px;
+		}
+	}
+	.form{
+		&__title{
+			font-size: 22px;
+		}
+		&__wrap{
+			margin: 20px 0 0 0;
+			flex-direction:column;
+		}
+		&__name{
+			margin: 0 0 10px 0;
+			width: 50%;
+			padding: 0 0 10px 0;
+		}
+		&__mail{
+			margin: 10px 0 0 0;
+			width: 50%;
+			padding: 0 0 10px 0;
+		}
+		&__message{
+			margin: 20px 0 0 0;
+		}
+		&__btn{
+			margin: 20px 0 0 0;
+			text-align-last: left;
+		}
+	}
+}
+@media (max-width: 373px) {
+	.discuss{
+		padding: 50px 0 110px 0;
 	}
 }
 
