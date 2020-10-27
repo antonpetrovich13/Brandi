@@ -1238,6 +1238,10 @@ body.lock{
 		& img{
 			opacity: 0.5;
 			padding: 6px 7px 0 7px;
+			animation-name: heart;
+		animation-duration:0.5s;
+		animation-iteration-count: infinite;
+		animation-direction: alternate;
 		}
 		& a{
 			color: #062033;
@@ -1273,7 +1277,7 @@ body.lock{
 	}
 	&__email {
 		display: block;
-		padding: 0 50px 0 10px;
+		padding: 0 40px 0 10px;
 		width: 271px;
 		height: 46px;
 		border: 2px solid #fff !important;
@@ -1283,16 +1287,35 @@ body.lock{
 	}
 	&__btn {
 		position: absolute;
-		top:30%;
+		top:32%;
 		right: 10px;
 		background-color: #1da78d;
-		transform:rotate(270deg);
+		animation-name: arrow;
+		animation-duration:0.8s;
+		animation-timing-function:linear;
+		animation-direction:alternate;
+		animation-iteration-count:infinite;
+		&:hover{
+			animation-play-state:paused;
+		}
 	}
 	&__text {
 		margin: 18px 0 0 0;
 		font-size: 13px;
 		line-height: 24px;
 		color: #ffffff;
+	}
+	@keyframes arrow {
+		0%{
+			right: 22px;
+			transform:scale(1);
+			
+		}
+		100%{
+			right: 10px;
+			transform:scale(0.85);
+			
+		}
 	}
 }
 .explore {
@@ -1322,6 +1345,7 @@ body.lock{
 		}
 	}
 }
+
 @media (max-width: 1170px) {
 	.footer{
 		padding: 70px 0 20px 0;

@@ -1668,6 +1668,14 @@ body.lock {
 .footer__title img {
   opacity: 0.5;
   padding: 6px 7px 0 7px;
+  -webkit-animation-name: heart;
+  animation-name: heart;
+  -webkit-animation-duration: 0.5s;
+  animation-duration: 0.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
 }
 
 .footer__title a {
@@ -1705,7 +1713,7 @@ body.lock {
 
 .subscribe__email {
   display: block;
-  padding: 0 50px 0 10px;
+  padding: 0 40px 0 10px;
   width: 271px;
   height: 46px;
   border: 2px solid #fff !important;
@@ -1716,12 +1724,24 @@ body.lock {
 
 .subscribe__btn {
   position: absolute;
-  top: 30%;
+  top: 32%;
   right: 10px;
   background-color: #1da78d;
-  -webkit-transform: rotate(270deg);
-  -ms-transform: rotate(270deg);
-  transform: rotate(270deg);
+  -webkit-animation-name: arrow;
+  animation-name: arrow;
+  -webkit-animation-duration: 0.8s;
+  animation-duration: 0.8s;
+  -webkit-animation-timing-function: linear;
+  animation-timing-function: linear;
+  -webkit-animation-direction: alternate;
+  animation-direction: alternate;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+}
+
+.subscribe__btn:hover {
+  -webkit-animation-play-state: paused;
+  animation-play-state: paused;
 }
 
 .subscribe__text {
@@ -1729,6 +1749,32 @@ body.lock {
   font-size: 13px;
   line-height: 24px;
   color: #ffffff;
+}
+
+@-webkit-keyframes arrow {
+  0% {
+    right: 22px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    right: 10px;
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
+}
+
+@keyframes arrow {
+  0% {
+    right: 22px;
+    -webkit-transform: scale(1);
+    transform: scale(1);
+  }
+  100% {
+    right: 10px;
+    -webkit-transform: scale(0.85);
+    transform: scale(0.85);
+  }
 }
 
 .explore__title {
