@@ -59,7 +59,13 @@ body.lock{
 	position: fixed;
 	width: 100%;
 	z-index: 15;
-	transition: all 0.5s ease 0s;
+	transform:translate(0,-70%);
+	opacity: 0;
+	transition:opacity 1.3s ease 1.4s, transform 1.3s ease 1.4s, background-color 0.5s ease 0s;
+	&._active{
+		opacity: 1;
+		transform:translate(0,0);
+	}
 	&__wrapper {
 		display: flex;
 		width: 100%;
@@ -272,6 +278,11 @@ body.lock{
 	}
 	&__text {
 		text-align: center;
+		opacity:0;
+		transition:all 2.5s ease 1s;
+		&._active{
+			opacity: 1;
+		}
 	}
 	&__title {
 		font-size: 62px;
@@ -315,7 +326,14 @@ body.lock{
 		}
 	}
 	&__links {
+		transition: all 0.8s ease-out 1.7s;
+		opacity: 0;
+		transform:translate(0,80%);
 		margin: 100% 0 0 0;
+		&._active{
+			transform:translate(0,0);
+			opacity: 1;
+		}
 	}
 	&__link {
 		transition: all 0.3s ease 0s;
@@ -474,6 +492,13 @@ body.lock{
 }
 .title {
 	text-align: center;
+	opacity: 0;
+	transform:translate(0,-30%);
+	transition: all 1s ease 0.3s;
+	&._active{
+		opacity: 1;
+		transform:translate(0,0);
+	}
 	&__label {
 		font-size: 28px;
 		font-weight: 800;
@@ -879,7 +904,8 @@ body.lock{
 	background: url(../img/facts/background.jpg) no-repeat;
 	background-size: cover;
 	background-position: center;
-	&__title {}
+	&__title {
+	}
 	&__wrap {
 		padding: 20px 0 0 0;
 		margin: 0 -40px;
@@ -892,6 +918,34 @@ body.lock{
 		padding: 0 40px;
 		margin: 60px 0 0 0;
 		flex: 0 1 25%;
+		&_1{
+			transition: all 0.8s ease 0.3s;
+			transform:scale(0);
+			&._active{
+				transform:scale(1);
+			}
+		}
+		&_2{
+			transition: all 0.8s ease 0.5s;
+			transform:scale(0);
+			&._active{
+				transform:scale(1);
+			}
+		}
+		&_3{
+			transition: all 0.8s ease 0.7s;
+			transform:scale(0);
+			&._active{
+				transform:scale(1);
+			}
+		}
+		&_4{
+			transition: all 0.8s ease 0.9s;
+			transform:scale(0);
+			&._active{
+				transform:scale(1);
+			}
+		}
 	}
 	&__item {
 		display: flex;
