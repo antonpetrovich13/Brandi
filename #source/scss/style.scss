@@ -61,7 +61,7 @@ body.lock{
 	z-index: 15;
 	transform:translate(0,-70%);
 	opacity: 0;
-	transition:opacity 1.3s ease 1.4s, transform 1.3s ease 1.4s, background-color 0.5s ease 0s;
+	transition:opacity 1.3s ease 0.9s, transform 1.3s ease 0.9s, background-color 0.5s ease 0s;
 	&._active{
 		opacity: 1;
 		transform:translate(0,0);
@@ -279,7 +279,7 @@ body.lock{
 	&__text {
 		text-align: center;
 		opacity:0;
-		transition:all 2.5s ease 1s;
+		transition:all 2.5s ease 0.5s;
 		&._active{
 			opacity: 1;
 		}
@@ -326,7 +326,7 @@ body.lock{
 		}
 	}
 	&__links {
-		transition: all 0.8s ease-out 1.7s;
+		transition: all 1.3s ease-out 1.2s;
 		opacity: 0;
 		transform:translate(0,80%);
 		margin: 100% 0 0 0;

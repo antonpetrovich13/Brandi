@@ -153,11 +153,11 @@ body.lock {
   -ms-transform: translate(0, -70%);
   transform: translate(0, -70%);
   opacity: 0;
-  -webkit-transition: opacity 1.3s ease 1.4s, background-color 0.5s ease 0s, -webkit-transform 1.3s ease 1.4s;
-  transition: opacity 1.3s ease 1.4s, background-color 0.5s ease 0s, -webkit-transform 1.3s ease 1.4s;
-  -o-transition: opacity 1.3s ease 1.4s, transform 1.3s ease 1.4s, background-color 0.5s ease 0s;
-  transition: opacity 1.3s ease 1.4s, transform 1.3s ease 1.4s, background-color 0.5s ease 0s;
-  transition: opacity 1.3s ease 1.4s, transform 1.3s ease 1.4s, background-color 0.5s ease 0s, -webkit-transform 1.3s ease 1.4s;
+  -webkit-transition: opacity 1.3s ease 0.9s, background-color 0.5s ease 0s, -webkit-transform 1.3s ease 0.9s;
+  transition: opacity 1.3s ease 0.9s, background-color 0.5s ease 0s, -webkit-transform 1.3s ease 0.9s;
+  -o-transition: opacity 1.3s ease 0.9s, transform 1.3s ease 0.9s, background-color 0.5s ease 0s;
+  transition: opacity 1.3s ease 0.9s, transform 1.3s ease 0.9s, background-color 0.5s ease 0s;
+  transition: opacity 1.3s ease 0.9s, transform 1.3s ease 0.9s, background-color 0.5s ease 0s, -webkit-transform 1.3s ease 0.9s;
 }
 
 .header._active {
@@ -447,9 +447,9 @@ body.lock {
 .main-info__text {
   text-align: center;
   opacity: 0;
-  -webkit-transition: all 2.5s ease 1s;
-  -o-transition: all 2.5s ease 1s;
-  transition: all 2.5s ease 1s;
+  -webkit-transition: all 2.5s ease 0.5s;
+  -o-transition: all 2.5s ease 0.5s;
+  transition: all 2.5s ease 0.5s;
 }
 
 .main-info__text._active {
@@ -504,9 +504,9 @@ body.lock {
 }
 
 .main-info__links {
-  -webkit-transition: all 0.8s ease-out 1.7s;
-  -o-transition: all 0.8s ease-out 1.7s;
-  transition: all 0.8s ease-out 1.7s;
+  -webkit-transition: all 1.3s ease-out 1.2s;
+  -o-transition: all 1.3s ease-out 1.2s;
+  transition: all 1.3s ease-out 1.2s;
   opacity: 0;
   -webkit-transform: translate(0, 80%);
   -ms-transform: translate(0, 80%);
